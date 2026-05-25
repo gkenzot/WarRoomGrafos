@@ -117,32 +117,3 @@ WarRoomGrafos/
 ```
 
 Os modelos prontos ficam em `src/data/modelos.json`. A logica de leitura das arestas, matriz de adjacencia e grafo aleatorio fica em `src/lib/graph.js`; o calculo guloso do War Room fica em `src/lib/warRoom.js`.
-
-## Build
-
-Para gerar a versao de producao:
-
-```powershell
-npm run build
-```
-
-Os arquivos finais serao criados na pasta `dist`.
-
-## Publicacao no GitHub Pages
-
-Este projeto esta configurado para publicar em:
-
-```text
-https://gkenzot.github.io/WarRoomGrafos/
-```
-
-O arquivo `vite.config.js` usa `base: '/WarRoomGrafos/'`, que e necessario para o Vite carregar CSS, JavaScript e imagens corretamente no GitHub Pages.
-
-Para deixar online pelo proprio GitHub:
-
-1. Envie o projeto para o repositorio `gkenzot/WarRoomGrafos`.
-2. No GitHub, abra `Settings` > `Pages`.
-3. Em `Build and deployment`, selecione `GitHub Actions` como origem.
-4. Aguarde o workflow `Deploy GitHub Pages` terminar na aba `Actions`.
-
-Depois do deploy, o site ficara disponivel no endereco acima.
